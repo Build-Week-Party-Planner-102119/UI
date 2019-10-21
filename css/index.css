@@ -1,3 +1,8 @@
+.nav-links {
+  text-decoration: none;
+  color: #6D7D8A;
+  font-size: 1.8rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +164,10 @@ p {
   font-size: 1.6rem;
   line-height: 1.5;
 }
+i {
+  font-size: 6em;
+  color: #ECEBE7;
+}
 .container {
   margin: 0 auto;
 }
@@ -223,4 +232,42 @@ header div {
   border-radius: 5px;
   color: #6E7E87;
   margin-top: 50px;
+}
+#features {
+  background-color: #6E7E87;
+  color: #ECEBE7;
+}
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.feature div {
+  width: 20%;
+  text-align: center;
+}
+.more-features p {
+  padding: 4% 6% 3%;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+  padding: 3%;
+}
+.bottom a {
+  text-decoration: none;
+  color: #6D7D8A;
+  font-size: 1.8rem;
+}
+.bottom .btm-links {
+  margin-left: 100px;
+}
+footer {
+  padding: 4%;
+}
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
 }

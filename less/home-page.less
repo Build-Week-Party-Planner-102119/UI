@@ -33,6 +33,47 @@ header {
 }
 
 #features {
-    
+    background-color: @section-bg;
+    color: @solitude;
+}
+
+.feature {
+    .display-layout(flex, row);
+    justify-content: space-around;
+
+    div {
+        width: 20%;
+        text-align: center;
+    }
+
+}
+
+.more-features p {
+    padding: 4% 6% 3%;
+}
+
+.bottom {
+    .display-layout(flex, row);
+    justify-content: space-evenly;
+    font-size: 1.8rem;
+    padding: 3%;
+
+    a {
+        .nav-links();
+    }
+
+    .btm-links {
+        margin-left: 100px;
+    }
+
+}
+
+footer {
+    padding: 4%;
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }
 
