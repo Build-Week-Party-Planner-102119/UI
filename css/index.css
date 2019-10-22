@@ -168,6 +168,11 @@ i {
   font-size: 6em;
   color: #ECEBE7;
 }
+@media (max-width: 500px) {
+  i {
+    font-size: 4em;
+  }
+}
 .container {
   margin: 0 auto;
 }
@@ -178,8 +183,20 @@ nav {
   background-color: #ECEBE7;
   padding: 4% 2%;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 nav div {
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  nav div {
+    margin: 3%;
+  }
 }
 nav a {
   text-decoration: none;
@@ -192,13 +209,36 @@ nav .links a {
 .links {
   margin-left: 125px;
 }
+@media (max-width: 500px) {
+  .links {
+    margin-left: 0;
+  }
+}
 .register {
   margin-right: 125px;
 }
+@media (max-width: 500px) {
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 0;
+    line-height: 1.25;
+  }
+}
 .btn-outline {
-  border: 1px solid;
+  border: 1px solid #354356;
   border-radius: 5px;
   padding: 5px 10px;
+  background-color: #90949C;
+  color: #ECEBE7;
+}
+@media (max-width: 500px) {
+  .btn-outline {
+    width: 100px;
+    margin-top: 5px;
+  }
 }
 header {
   background-color: #354356;
@@ -206,22 +246,51 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
 header div {
   width: 50%;
-  margin: 20px 20px 0 20px;
+  margin: 2% 2% 0 2%;
+}
+@media (max-width: 500px) {
+  header div {
+    width: 100%;
+    margin: 1%;
+  }
 }
 .about {
   padding: 5%;
+}
+.about div {
+  display: flex;
+  justify-content: center;
 }
 .about p {
   margin-top: 20px;
 }
 .about-img {
-  width: 50%;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .about-img {
+    width: 100%;
+    margin: 15px 5px 10px 60px;
+  }
 }
 .about-img img {
   width: 90%;
-  padding: 5% 0 5%;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .about-img img {
+    padding: 3%;
+  }
 }
 .btn {
   display: block;
@@ -241,28 +310,94 @@ header div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 2% 4%;
+}
+@media (max-width: 500px) {
+  .feature {
+    display: inline-block;
+  }
 }
 .feature div {
   width: 20%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .feature div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 .more-features p {
   padding: 4% 6% 3%;
+}
+@media (max-width: 500px) {
+  .more-features p {
+    background-color: #354356;
+    color: #90949C;
+    padding: 5% 6% 6%;
+  }
 }
 .bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 1.8rem;
   padding: 3%;
+}
+@media (max-width: 500px) {
+  .bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .bottom div {
+    margin: 20px 0 10px;
+  }
 }
 .bottom a {
   text-decoration: none;
   color: #6D7D8A;
   font-size: 1.8rem;
 }
-.bottom .btm-links {
-  margin-left: 100px;
+.bottom .logo-btn {
+  margin-left: 70px;
+}
+@media (max-width: 500px) {
+  .bottom .logo-btn {
+    margin-left: 0;
+  }
+}
+.bottom .logo-btn .btm-register {
+  margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .bottom .logo-btn .btm-register {
+    display: none;
+  }
+}
+.bottom .logo-btn .btn-outline {
+  color: #ECEBE7;
+  border: 1px solid #354356;
+}
+.btm-links {
+  margin-right: 40px;
+}
+@media (max-width: 500px) {
+  .btm-links {
+    margin-right: 0;
+  }
+}
+.btm-links a {
+  margin: 0 30px 0;
+}
+@media (max-width: 500px) {
+  .btm-links a {
+    margin: 0 20px 0;
+    font-size: 1.6rem;
+  }
 }
 footer {
   padding: 4%;
