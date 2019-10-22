@@ -1,0 +1,62 @@
+nav {
+    .display-layout(flex, row);
+    justify-content: space-between;
+    background-color: @nav-background;
+    padding: 4% 2%;
+
+    @media @phone {
+        .display-layout(flex, column);
+        text-align: center;
+    }
+
+    div {
+        font-size: 1.8rem;
+
+        @media @phone {
+            margin: 3%;
+        }
+    }
+
+    a {
+        .nav-links();
+    }
+
+    .links a {
+        margin: 0 20px 0;
+
+    }
+    
+}
+
+.links {
+    margin-left: 125px;
+
+    @media @phone {
+        margin-left: 0;
+    }
+}
+
+.register {
+    margin-right: 125px;
+
+    @media @phone {
+        .display-layout(flex, column);
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: 0;
+        line-height: 1.25;
+    }
+}
+
+.btn-outline {
+    border: 1px solid @polo-blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: @manatee;
+    color: @solitude;
+
+    @media @phone {
+        width: 100px;
+        margin-top: 5px;
+    }
+}
