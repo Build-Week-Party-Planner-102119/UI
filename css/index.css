@@ -242,10 +242,12 @@ nav .links a {
 }
 footer {
   padding: 4%;
+  background-color: #ECEBE7;
 }
 footer p {
   text-align: center;
   font-size: 1.2rem;
+  color: #354356;
 }
 .home-header {
   background-color: #354356;
@@ -350,6 +352,7 @@ footer p {
   justify-content: space-between;
   font-size: 1.8rem;
   padding: 3%;
+  background-color: #ECEBE7;
 }
 @media (max-width: 500px) {
   .bottom {
@@ -417,6 +420,21 @@ footer p {
   background-color: #354356;
   text-align: center;
   line-height: 1.5;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .about-header {
+    padding: 6%;
+  }
+}
+.about-header p {
+  font-size: 2.2rem;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  .about-header p {
+    font-size: 1.8rem;
+  }
 }
 .build-team {
   display: flex;
@@ -425,11 +443,35 @@ footer p {
   justify-content: center;
   align-content: center;
   text-align: center;
+  padding-top: 20px;
+  background-color: #6D7D8A;
+  color: #ECEBE7;
 }
 .build-team div {
   width: 45%;
-  padding: 2% 1% 1%;
+  padding: 2% 3% 4%;
+  line-height: 1.5;
+}
+.build-team div h2 {
+  color: #354356;
+}
+.build-team div h3 {
+  color: #ECEBE7;
+  font-size: 2.6rem;
+}
+.build-team div p {
+  margin-top: 2%;
 }
 .build-team .img-team {
   width: 40%;
+  margin-bottom: 2%;
+}
+.quote {
+  background-color: #354356;
+  text-align: center;
+  line-height: 1.5;
+  padding: 4%;
+}
+.quote p {
+  font-size: 2.2rem;
 }
