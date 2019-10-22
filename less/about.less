@@ -28,10 +28,18 @@
     background-color: @blue-whale;
     color: @solitude;
 
+    @media @phone {
+        .display-layout(flex, column);
+    }
+
     div {
         width: 45%;
         padding: 2% 3% 4%;
         line-height: 1.5;
+
+        @media @phone {
+            width: 80%;
+        }
 
         h2 {
             color: @polo-blue;

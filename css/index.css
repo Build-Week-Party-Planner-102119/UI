@@ -141,6 +141,7 @@ html,
 body {
   font-family: 'Quicksand', sans-serif;
   color: #90949C;
+  line-height: 1.5;
 }
 h1,
 h2,
@@ -447,10 +448,21 @@ footer p {
   background-color: #6D7D8A;
   color: #ECEBE7;
 }
+@media (max-width: 500px) {
+  .build-team {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .build-team div {
   width: 45%;
   padding: 2% 3% 4%;
   line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .build-team div {
+    width: 80%;
+  }
 }
 .build-team div h2 {
   color: #354356;
