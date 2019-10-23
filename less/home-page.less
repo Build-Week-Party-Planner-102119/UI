@@ -106,15 +106,30 @@
 
 }
 
-.more-features p {
-    padding: 4% 6% 3%;
+.more-features {
+    text-align: center;
+    border-top: 3px dotted @solitude;
+    
+    .tablet {
+        width: 25%;
+        margin-top: 2%;
 
-    @media @phone {
-        background-color: @polo-blue;
-        color: @main-font;
-        padding: 5% 6% 6%;
+        @media @phone {
+            display: none;
+        }
     }
+    p {
+        padding: 2% 6% 3%;
+    
+        @media @phone {
+            background-color: @polo-blue;
+            color: @main-font;
+            padding: 5% 6% 6%;
+        }
 }
+ 
+}
+
 
 .bottom {
     .display-layout(flex, row);
@@ -157,6 +172,10 @@
         .btn-outline {
             color: @solitude;
             border: 1px solid @polo-blue;
+
+            &:hover {
+                color: @polo-blue;
+            }
         }
     }
 

@@ -3,6 +3,9 @@
   color: #6D7D8A;
   font-size: 1.8rem;
 }
+.nav-links:hover {
+  color: #354356;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -204,8 +207,11 @@ nav a {
   color: #6D7D8A;
   font-size: 1.8rem;
 }
+nav a:hover {
+  color: #354356;
+}
 nav .links a {
-  margin: 0 20px 0;
+  margin: 0 18px 0;
 }
 .links {
   margin-left: 125px;
@@ -301,6 +307,10 @@ footer p {
   color: #6E7E87;
   margin-top: 50px;
 }
+.about .btn:hover {
+  background-color: #6E7E87;
+  color: #ECEBE7;
+}
 .about-img {
   margin-bottom: 20px;
   margin: 2% 2% 0 2%;
@@ -355,8 +365,21 @@ h3 {
     margin-bottom: 30px;
   }
 }
+.more-features {
+  text-align: center;
+  border-top: 3px dotted #ECEBE7;
+}
+.more-features .tablet {
+  width: 25%;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .more-features .tablet {
+    display: none;
+  }
+}
 .more-features p {
-  padding: 4% 6% 3%;
+  padding: 2% 6% 3%;
 }
 @media (max-width: 500px) {
   .more-features p {
@@ -391,6 +414,9 @@ h3 {
   color: #6D7D8A;
   font-size: 1.8rem;
 }
+.bottom a:hover {
+  color: #354356;
+}
 .bottom .logo-btn {
   margin-left: 70px;
 }
@@ -410,6 +436,9 @@ h3 {
 .bottom .logo-btn .btn-outline {
   color: #ECEBE7;
   border: 1px solid #354356;
+}
+.bottom .logo-btn .btn-outline:hover {
+  color: #354356;
 }
 .btm-links {
   margin-right: 40px;
@@ -441,6 +470,9 @@ footer p {
   line-height: 1.5;
   padding: 2%;
 }
+.about-header h2 {
+  color: #ECEBE7;
+}
 @media (max-width: 500px) {
   .about-header {
     padding: 6%;
@@ -448,11 +480,12 @@ footer p {
 }
 .about-header p {
   font-size: 2.2rem;
-  padding-top: 2%;
+  padding: 0 31%;
 }
 @media (max-width: 500px) {
   .about-header p {
     font-size: 1.8rem;
+    padding: 0 20%;
   }
 }
 .build-team {
@@ -489,7 +522,8 @@ footer p {
   color: #ECEBE7;
   font-size: 2.6rem;
 }
-.build-team div p {
+.build-team div p,
+.build-team div i {
   margin-top: 2%;
 }
 .build-team .img-team {
