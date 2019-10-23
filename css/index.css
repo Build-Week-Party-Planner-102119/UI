@@ -185,7 +185,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   background-color: #ECEBE7;
-  padding: 4% 2%;
+  padding: 4% 4%;
 }
 @media (max-width: 500px) {
   nav {
@@ -196,9 +196,11 @@ nav {
 }
 nav div {
   font-size: 1.8rem;
+  width: 33%;
 }
 @media (max-width: 500px) {
   nav div {
+    width: 100%;
     margin: 3%;
   }
 }
@@ -213,8 +215,16 @@ nav a:hover {
 nav .links a {
   margin: 0 18px 0;
 }
+nav .logo {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  nav .logo {
+    width: 54%;
+  }
+}
 .links {
-  margin-left: 125px;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .links {
@@ -222,7 +232,7 @@ nav .links a {
   }
 }
 .register {
-  margin-right: 125px;
+  text-align: right;
 }
 @media (max-width: 500px) {
   .register {
@@ -230,6 +240,7 @@ nav .links a {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
     margin-right: 0;
     line-height: 1.25;
   }
@@ -402,10 +413,15 @@ h3 {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
+}
+.bottom div {
+  width: 50%;
 }
 @media (max-width: 500px) {
   .bottom div {
+    width: 100%;
     margin: 20px 0 10px;
   }
 }
@@ -425,6 +441,14 @@ h3 {
     margin-left: 0;
   }
 }
+.bottom .logo-btn .logo {
+  width: 43%;
+}
+@media (max-width: 500px) {
+  .bottom .logo-btn .logo {
+    width: 53%;
+  }
+}
 .bottom .logo-btn .btm-register {
   margin-top: 40px;
 }
@@ -441,10 +465,12 @@ h3 {
   color: #354356;
 }
 .btm-links {
+  text-align: right;
   margin-right: 40px;
 }
 @media (max-width: 500px) {
   .btm-links {
+    text-align: center;
     margin-right: 0;
   }
 }
@@ -453,7 +479,7 @@ h3 {
 }
 @media (max-width: 500px) {
   .btm-links a {
-    margin: 0 20px 0;
+    margin: 0 10px 0;
     font-size: 1.6rem;
   }
 }
@@ -537,5 +563,12 @@ footer p {
   padding: 4%;
 }
 .quote p {
-  font-size: 2.2rem;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.8rem;
+}
+@media (max-width: 500px) {
+  .quote p {
+    font-size: 2.4rem;
+    padding: 6%;
+  }
 }

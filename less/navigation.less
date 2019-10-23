@@ -2,7 +2,7 @@ nav {
     .display-layout(flex, row);
     justify-content: space-between;
     background-color: @nav-background;
-    padding: 4% 2%;
+    padding: 4% 4%;
 
     @media @phone {
         .display-layout(flex, column);
@@ -11,10 +11,13 @@ nav {
 
     div {
         font-size: 1.8rem;
+        width: 33%;
 
         @media @phone {
+            width: 100%;
             margin: 3%;
         }
+    
     }
 
     a {
@@ -25,11 +28,19 @@ nav {
         margin: 0 18px 0;
 
     }
+
+    .logo {
+        width: 60%;
+
+        @media @phone {
+            width: 54%;
+        }
+    }
     
 }
 
 .links {
-    margin-left: 125px;
+    text-align: center;
 
     @media @phone {
         margin-left: 0;
@@ -37,12 +48,13 @@ nav {
 }
 
 .register {
-    margin-right: 125px;
-
+    text-align: right;
+    
     @media @phone {
         .display-layout(flex, column);
         align-items: center;
         flex-wrap: wrap;
+        text-align: center;
         margin-right: 0;
         line-height: 1.25;
     }
