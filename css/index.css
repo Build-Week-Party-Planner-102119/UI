@@ -376,6 +376,9 @@ h3 {
     margin-bottom: 30px;
   }
 }
+.feature div P {
+  margin-top: 10px;
+}
 .more-features {
   text-align: center;
   border-top: 3px dotted #ECEBE7;
