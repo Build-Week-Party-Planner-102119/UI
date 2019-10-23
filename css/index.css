@@ -3,6 +3,9 @@
   color: #6D7D8A;
   font-size: 1.8rem;
 }
+.nav-links:hover {
+  color: #354356;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -141,6 +144,7 @@ html,
 body {
   font-family: 'Quicksand', sans-serif;
   color: #90949C;
+  line-height: 1.5;
 }
 h1,
 h2,
@@ -203,8 +207,11 @@ nav a {
   color: #6D7D8A;
   font-size: 1.8rem;
 }
+nav a:hover {
+  color: #354356;
+}
 nav .links a {
-  margin: 0 20px 0;
+  margin: 0 18px 0;
 }
 .links {
   margin-left: 125px;
@@ -240,59 +247,57 @@ nav .links a {
     margin-top: 5px;
   }
 }
-header {
+footer {
+  padding: 4%;
+  background-color: #ECEBE7;
+}
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #354356;
+}
+.home-header {
   background-color: #354356;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  header {
+  .home-header {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
-header div {
+.home-header div {
   width: 50%;
-  margin: 2% 2% 0 2%;
 }
 @media (max-width: 500px) {
-  header div {
+  .home-header div {
     width: 100%;
     margin: 1%;
   }
 }
 .about {
   padding: 5%;
+  margin: 2% 2% 0 2%;
 }
 .about div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  .about div {
+    justify-content: center;
+  }
 }
 .about p {
   margin-top: 20px;
+  font-size: 1.8rem;
 }
-.about-img {
-  margin-bottom: 20px;
-}
-@media (max-width: 500px) {
-  .about-img {
-    width: 100%;
-    margin: 15px 5px 10px 60px;
-  }
-}
-.about-img img {
-  width: 90%;
-  padding: 5%;
-}
-@media (max-width: 500px) {
-  .about-img img {
-    padding: 3%;
-  }
-}
-.btn {
+.about .btn {
   display: block;
   background-color: #ECEBE7;
   width: 200px;
@@ -302,9 +307,42 @@ header div {
   color: #6E7E87;
   margin-top: 50px;
 }
+.about .btn:hover {
+  background-color: #6E7E87;
+  color: #ECEBE7;
+}
+.about-img {
+  margin-bottom: 20px;
+  margin: 2% 2% 0 2%;
+}
+@media (max-width: 500px) {
+  .about-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.about-img img {
+  width: 90%;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .about-img img {
+    padding: 3%;
+    margin-top: 2%;
+  }
+}
 #features {
   background-color: #6E7E87;
   color: #ECEBE7;
+}
+h2 {
+  color: #354356;
+  text-align: center;
+  padding: 2% 0 1%;
+}
+h3 {
+  color: #354356;
 }
 .feature {
   display: flex;
@@ -327,8 +365,21 @@ header div {
     margin-bottom: 30px;
   }
 }
+.more-features {
+  text-align: center;
+  border-top: 3px dotted #ECEBE7;
+}
+.more-features .tablet {
+  width: 25%;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .more-features .tablet {
+    display: none;
+  }
+}
 .more-features p {
-  padding: 4% 6% 3%;
+  padding: 2% 6% 3%;
 }
 @media (max-width: 500px) {
   .more-features p {
@@ -343,6 +394,7 @@ header div {
   justify-content: space-between;
   font-size: 1.8rem;
   padding: 3%;
+  background-color: #ECEBE7;
 }
 @media (max-width: 500px) {
   .bottom {
@@ -361,6 +413,9 @@ header div {
   text-decoration: none;
   color: #6D7D8A;
   font-size: 1.8rem;
+}
+.bottom a:hover {
+  color: #354356;
 }
 .bottom .logo-btn {
   margin-left: 70px;
@@ -381,6 +436,9 @@ header div {
 .bottom .logo-btn .btn-outline {
   color: #ECEBE7;
   border: 1px solid #354356;
+}
+.bottom .logo-btn .btn-outline:hover {
+  color: #354356;
 }
 .btm-links {
   margin-right: 40px;
@@ -405,4 +463,79 @@ footer {
 footer p {
   text-align: center;
   font-size: 1.2rem;
+}
+.about-header {
+  background-color: #354356;
+  text-align: center;
+  line-height: 1.5;
+  padding: 2%;
+}
+.about-header h2 {
+  color: #ECEBE7;
+}
+@media (max-width: 500px) {
+  .about-header {
+    padding: 6%;
+  }
+}
+.about-header p {
+  font-size: 2.2rem;
+  padding: 0 31%;
+}
+@media (max-width: 500px) {
+  .about-header p {
+    font-size: 1.8rem;
+    padding: 0 20%;
+  }
+}
+.build-team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #6D7D8A;
+  color: #ECEBE7;
+}
+@media (max-width: 500px) {
+  .build-team {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.build-team div {
+  width: 45%;
+  padding: 2% 3% 4%;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .build-team div {
+    width: 80%;
+  }
+}
+.build-team div h2 {
+  color: #354356;
+}
+.build-team div h3 {
+  color: #ECEBE7;
+  font-size: 2.6rem;
+}
+.build-team div p,
+.build-team div i {
+  margin-top: 2%;
+}
+.build-team .img-team {
+  width: 40%;
+  margin-bottom: 2%;
+}
+.quote {
+  background-color: #354356;
+  text-align: center;
+  line-height: 1.5;
+  padding: 4%;
+}
+.quote p {
+  font-size: 2.2rem;
 }

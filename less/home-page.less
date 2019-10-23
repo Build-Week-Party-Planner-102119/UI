@@ -1,4 +1,4 @@
-header {
+.home-header {
     background-color: @main-background;
     .display-layout(flex, row);
     justify-content: space-between;
@@ -7,11 +7,12 @@ header {
         .display-layout(flex, column-reverse);
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     div {
         width: 50%;
-        margin: 2% 2% 0 2%;
+        // margin: 2% 2% 0 2%;
 
         @media @phone {
             width: 100%;
@@ -22,14 +23,25 @@ header {
 
 .about {
     padding: 5%;
+    margin: 2% 2% 0 2%;
 
     div {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+
+        @media @phone {
+            justify-content: center;
+        }
     }
 
     p {
         margin-top: 20px;
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        .btn-class(200px, 50px, 2.0rem);
+        margin-top: 50px;
     }
 
 }
@@ -37,10 +49,12 @@ header {
 .about-img {
 
     margin-bottom: 20px;
+    margin: 2% 2% 0 2%;
 
     @media @phone {
         width: 100%;
-        margin: 15px 5px 10px 60px;
+        display: flex;
+        justify-content: center;
     }
 
     img {
@@ -49,21 +63,26 @@ header {
     
         @media @phone {
             padding: 3%;
+            margin-top: 2%;
         }
     }
 }
 
 
-.btn {
-    .btn-class(200px, 50px, 2.0rem);
-    margin-top: 50px;
-
-}
-
 #features {
     background-color: @section-bg;
     color: @solitude;
 }
+
+    h2 {
+    color: @polo-blue;
+    text-align: center;
+    padding: 2% 0 1%;
+    }
+
+    h3 {
+        color: @polo-blue;
+    }
 
 .feature {
     .display-layout(flex, row);
@@ -87,21 +106,37 @@ header {
 
 }
 
-.more-features p {
-    padding: 4% 6% 3%;
+.more-features {
+    text-align: center;
+    border-top: 3px dotted @solitude;
+    
+    .tablet {
+        width: 25%;
+        margin-top: 2%;
 
-    @media @phone {
-        background-color: @polo-blue;
-        color: @main-font;
-        padding: 5% 6% 6%;
+        @media @phone {
+            display: none;
+        }
     }
+    p {
+        padding: 2% 6% 3%;
+    
+        @media @phone {
+            background-color: @polo-blue;
+            color: @main-font;
+            padding: 5% 6% 6%;
+        }
 }
+ 
+}
+
 
 .bottom {
     .display-layout(flex, row);
     justify-content: space-between;
     font-size: 1.8rem;
     padding: 3%;
+    background-color: @solitude;
 
     @media @phone {
         .display-layout(flex, column-reverse);
@@ -137,6 +172,10 @@ header {
         .btn-outline {
             color: @solitude;
             border: 1px solid @polo-blue;
+
+            &:hover {
+                color: @polo-blue;
+            }
         }
     }
 
