@@ -7,11 +7,12 @@
         .display-layout(flex, column-reverse);
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     div {
         width: 50%;
-        margin: 2% 2% 0 2%;
+        // margin: 2% 2% 0 2%;
 
         @media @phone {
             width: 100%;
@@ -22,14 +23,25 @@
 
 .about {
     padding: 5%;
+    margin: 2% 2% 0 2%;
 
     div {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+
+        @media @phone {
+            justify-content: center;
+        }
     }
 
     p {
         margin-top: 20px;
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        .btn-class(200px, 50px, 2.0rem);
+        margin-top: 50px;
     }
 
 }
@@ -37,10 +49,12 @@
 .about-img {
 
     margin-bottom: 20px;
+    margin: 2% 2% 0 2%;
 
     @media @phone {
         width: 100%;
-        margin: 15px 5px 10px 60px;
+        display: flex;
+        justify-content: center;
     }
 
     img {
@@ -49,21 +63,26 @@
     
         @media @phone {
             padding: 3%;
+            margin-top: 2%;
         }
     }
 }
 
 
-.btn {
-    .btn-class(200px, 50px, 2.0rem);
-    margin-top: 50px;
-
-}
-
 #features {
     background-color: @section-bg;
     color: @solitude;
 }
+
+    h2 {
+    color: @polo-blue;
+    text-align: center;
+    padding: 2% 0 1%;
+    }
+
+    h3 {
+        color: @polo-blue;
+    }
 
 .feature {
     .display-layout(flex, row);
