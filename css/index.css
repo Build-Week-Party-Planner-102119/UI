@@ -551,9 +551,14 @@ footer p {
   color: #ECEBE7;
   font-size: 2.6rem;
 }
-.build-team div p,
+.build-team div p {
+  margin-top: 2%;
+}
 .build-team div i {
   margin-top: 2%;
+}
+.build-team div i:hover {
+  color: #354356;
 }
 .build-team .img-team {
   width: 40%;
