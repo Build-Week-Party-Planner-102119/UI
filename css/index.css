@@ -308,6 +308,9 @@ footer p {
   margin-top: 20px;
   font-size: 1.8rem;
 }
+.about a {
+  text-decoration: none;
+}
 .about .btn {
   display: block;
   background-color: #ECEBE7;
@@ -316,6 +319,7 @@ footer p {
   font-size: 2rem;
   border-radius: 5px;
   color: #6E7E87;
+  text-decoration: none;
   margin-top: 50px;
 }
 .about .btn:hover {
